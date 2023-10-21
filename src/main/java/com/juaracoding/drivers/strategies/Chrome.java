@@ -12,6 +12,7 @@ public class Chrome implements DriverStrategy{
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("useAutomationExtension", false);
         options.addArguments("--no-sandbox");
+//        options.addArguments("--user-data-dir=C:\\Users\\ASUS\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 1");
         return new ChromeDriver(options);
     }
 }
