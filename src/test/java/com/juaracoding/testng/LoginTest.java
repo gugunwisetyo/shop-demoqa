@@ -1,4 +1,4 @@
-package com.juaracoding;
+package com.juaracoding.testng;
 
 import com.juaracoding.drivers.DriverSingleton;
 import com.juaracoding.pages.LoginPage;

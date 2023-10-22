@@ -47,6 +47,18 @@ public class LoginPage {
         this.loginBtn.click();
     }
 
+    public void setUsername(String username){
+        this.username.sendKeys(username);
+    }
+
+    public void setPassword(String password){
+        this.password.sendKeys(password);
+    }
+
+    public void login(){
+        this.loginBtn.click();
+    }
+
     public void doLogout(){
         this.logoutBtn.click();
     }
