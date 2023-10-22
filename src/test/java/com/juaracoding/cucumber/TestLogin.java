@@ -55,7 +55,7 @@ public class TestLogin {
 
     @Then("user get text login")
     public void user_get_text_hello(){
-        loginPage.scroll(0,500);
+        loginPage.scroll(0,550);
         Assert.assertEquals(loginPage.getTxtLogin(), "Hello gugunwisetyo (not gugunwisetyo? Log out)");
     }
 
