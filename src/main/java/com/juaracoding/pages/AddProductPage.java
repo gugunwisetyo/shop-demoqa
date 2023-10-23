@@ -107,6 +107,22 @@ public class AddProductPage extends LoginPage{
 //        scroll(0,400);
     }
 
+    public void selectProductOne(){
+        this.productOne.click();
+    }
+
+    public void selectColor(String color){
+        this.chooseColor.sendKeys(color);
+    }
+
+    public void selectSize(String size){
+        this.chooseSize.sendKeys(size);
+    }
+
+    public void selectToCart(){
+        this.addToCart.click();
+    }
+
     public void chooseProductTwo(){
         this.goToProduct.click();
         scroll(0,400);
@@ -115,6 +131,18 @@ public class AddProductPage extends LoginPage{
         this.chooseColor.sendKeys("Black");
         this.chooseSize.sendKeys("32");
         this.addToCart.click();
+        this.viewCart.click();
+    }
+
+    public void backToProduct(){
+        this.goToProduct.click();
+    }
+
+    public void selectProductTwo(){
+        this.productTwo.click();
+    }
+
+    public void selectViewCart(){
         this.viewCart.click();
     }
 
@@ -144,11 +172,60 @@ public class AddProductPage extends LoginPage{
         scroll(0,500);
     }
 
+    public void firstName(){
+        this.fillFirstName.sendKeys("Gugun");
+    }
+
+    public void lastName(){
+        this.fillLastName.sendKeys("Wisetyo");
+    }
+
+    public void fillRegion(){
+        this.region.click();
+        this.chooseRegion.sendKeys("indo");
+        this.chooseRegion.sendKeys(Keys.ENTER);
+    }
+
+    public void fillAddress(){
+        this.address.sendKeys("Jl. Kelurahan Raya no 55");
+    }
+
+    public void fillCity(){
+        this.city.sendKeys("Jakarta Timur");
+    }
+
+    public void fillProvince(){
+        this.province.click();
+        this.chooseProvince.sendKeys("dki");
+        this.chooseProvince.sendKeys(Keys.ENTER);
+    }
+
+    public void fillPostcode(){
+        this.postcode.sendKeys("13440");
+    }
+
+    public void fillPhone(){
+        this.phone.sendKeys("081289371982");
+    }
+
+    public void fillEmail(){
+        this.email.sendKeys("gugunwisetyo@gmail.com");
+    }
+
+    public void selectPlaceOrder(){
+        this.placeOrder.click();
+    }
+
     public void checkTnc(){
         scroll(0,500);
         this.tnc.click();
         this.placeOrder.click();
         scroll(0,500);
+    }
+
+    public void checklistTNC(){
+        scroll(0,500);
+        this.tnc.click();
     }
 
     public String getCartCount(){

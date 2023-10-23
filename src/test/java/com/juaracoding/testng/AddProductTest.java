@@ -22,7 +22,7 @@ public class AddProductTest {
     public void setUp(){
         DriverSingleton.getInstance(Constants.CHROME);
         driver = DriverSingleton.getDriver();
-        driver.get(Constants.URL);
+        driver.get(Constants.URL2);
         addProductPage = new AddProductPage();
         loginPage = new LoginPage();
     }
